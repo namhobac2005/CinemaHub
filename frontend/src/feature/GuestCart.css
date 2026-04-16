@@ -1,0 +1,187 @@
+
+.dashboard-layout {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr 380px !important;
+    gap: 2rem;
+  }
+}
+
+.cart-sidebar {
+  top: 150px;
+  right: 30px;
+  width: 380px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== THEATER BUTTON ==================== */
+.select-theater-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background-color: #9b5cf6;
+  color: #0F1629;
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.select-theater-btn:hover {
+  background-color: #a874ff;
+  color: #ffffff;
+}
+
+/* ==================== MOVIE CARD ==================== */
+.movie-card {
+  width: 100%;
+  max-width: 240px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 22px rgba(139, 92, 246, 0.25);
+}
+
+/* ==================== POSTER IMAGE ==================== */
+.movie-thumb {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-thumb-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;   /* poster đứng, cao hơn rộng */
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ==================== SHOWTIME BUTTON ==================== */
+.movie-showtime-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #9b5cf6;
+  color: #0F1629;
+  transition: 0.2s;
+}
+
+.movie-showtime-btn:hover {
+  background-color: #a874ff;
+  color: #ffffff;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card .movie-showtime-btn {
+  margin-top: auto !important;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card .movie-showtime-btn {
+  margin-top: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nút full width + dính đáy */
+.movie-showtime-btn {
+  margin-top: auto;
+  width: 100%;
+  display: block;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #9b5cf6;
+  color: #0F1629;
+  transition: 0.2s;
+}
+
+.movie-showtime-btn:hover {
+  background-color: #a874ff;
+  color: #ffffff;
+}
+.select-showtime-btn {
+  background-color: #8B5CF6 !important;
+  color: #0F1629 !important;
+  font-weight: 500;
+  border-radius: 10px !important;
+  padding: 6px 14px !important;
+  transition: 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.select-showtime-btn:hover {
+  background-color: #7C3AED !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+/* ========== MOVIE DETAIL (Customer / Guest shared) ========== */
+
+.movie-detail-grid {
+display: grid;
+grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+gap: 1.5rem;
+align-items: stretch;
+}
+
+@media (max-width: 768px) {
+.movie-detail-grid {
+  grid-template-columns: 1fr;
+}
+}
+
+.movie-detail-poster {
+border-radius: 16px;
+overflow: hidden;
+background-color: #020617;
+max-height: 400px;          /* giới hạn chiều cao poster cho đừng quá to */
+}
+
+.movie-detail-poster-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.movie-detail-content {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
